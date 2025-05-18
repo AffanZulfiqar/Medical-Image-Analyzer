@@ -8,6 +8,11 @@ import io
 st.set_page_config(page_title="MedVision: Medical Image Analyzer", layout="wide")
 st.title("🧠 MedVision - Medical Image Analyzer")
 
+st.markdown("""
+Welcome to MedVision – a medical image analyzer for grayscale scans (X-rays, MRIs) using classical image processing.
+Upload an image, apply filters, segment, detect edges, and explore key features interactively.
+""")
+
 # File uploader to upload medical image
 uploaded_file = st.file_uploader("Upload a medical image (X-ray or MRI)", type=["jpg", "jpeg", "png"])
 
